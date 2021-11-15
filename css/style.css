@@ -1,0 +1,75 @@
+/* Generics */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    display: table; 
+    content: '';
+    clear: both;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Utilities */
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+/* First header */
+
+#first-header {
+    height: 200px;
+    background-color: #E579E6;
+    margin: 20px 0px;
+}
+
+/* Spotlight */
+
+#spotlight {
+    height: 450px;
+    background-color: #E1D67A;
+    margin-bottom: 20px;
+}
+
+/* Content section */
+
+#content-section {
+    background-color: #2B86FF;
+}
+
+#second-header {
+    background-color: #ABCFE7;
+    height: 150px;
+}
+
+.sidebar {
+    float: left;
+    height: 700px;
+    width: 25%;
+    margin: 20px 0px;
+    background-color: #ABCFE7;
+}
+
+main {
+    float: left;
+    height: 700px;
+    width: calc(50% - 40px);
+    margin: 20px 20px;
+    background-color: #ABCFE7;
+}
+
+/* Footer */
+
+footer {
+    background-color: #8802FE;
+    height: 100px;
+    margin: 10px 0px;
+}
