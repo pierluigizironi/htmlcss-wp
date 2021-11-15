@@ -26,9 +26,11 @@ body {
 /* First header */
 
 #first-header {
-    height: 200px;
-    background-color: #E579E6;
     margin: 20px 0px;
+}
+
+#logo {
+    width: 15%;
 }
 
 /* Spotlight */
