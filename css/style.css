@@ -73,8 +73,12 @@ ul li{
     height: 100%;
 }
 
-#spotlight #spotlight-text {
+#spotlight-text {
     color: white;
+    position: absolute;
+    width: 50%;
+    bottom: 50px;
+    left: 50px;
 }
 
 /* Content section */
