@@ -49,6 +49,17 @@ ul li{
     display: inline;
 }
 
+h2 {
+    font-size: 1.2em;
+    color: #727272;
+    padding: 15px 0px;
+    font-weight: thin;
+}
+
+.side-content, #main-content {
+    color: #929292;
+}
+
 /* Spotlight */
 
 #spotlight, .overlay {
@@ -93,21 +104,23 @@ ul li{
 
 .sidebar {
     float: left;
-    height: 700px;
     width: 25%;
     margin: 20px 0px;
 }
 
 main {
     float: left;
-    height: 700px;
     width: calc(50% - 40px);
-    margin: 20px 20px;
+    margin: 0px 20px;
 }
+
+/* Overlay float sidebar images */
 
 .float-overlay .float-image {
     display: block;
-    width: 90%;
+    width: 290px;
+    height: 200px;
+    object-fit: cover;
   }
   
 
@@ -117,6 +130,9 @@ main {
   }
   
   .float-overlay::before {
+    width: 290px;
+    height: 200px;
+    object-fit: cover;
     content: '';
     position: absolute;
     border-radius: 20px;
@@ -127,6 +143,43 @@ main {
     z-index: 1;
     background: rgba(0, 0, 0, .2);
   }
+ /* Overlay banner 2 image */
+
+  .float-overlay-banner .float-banner {
+    display: block;
+    width: 550px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+
+.float-overlay-banner {
+    position: relative;
+    width: 100%;
+  }
+  
+  .float-overlay-banner::before {
+    width: 550px;
+    height: 200px;
+    object-fit: cover;
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, .2);
+  }
+
+#main-content {
+    width: 550px;
+}
+
+.side-content {
+    width: 280px;
+}
 
 /* Footer */
 footer {
