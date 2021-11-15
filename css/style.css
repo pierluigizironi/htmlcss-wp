@@ -98,6 +98,10 @@ h2 {
     color: #ACACAC;
 }
 
+#second-header {
+    margin-bottom: 20px;
+}
+
 #title-second-header {
     font-size: 2.5em;
 }
@@ -140,7 +144,6 @@ main {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 1;
     background: rgba(0, 0, 0, .2);
   }
  /* Overlay banner 2 image */
@@ -169,7 +172,6 @@ main {
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 1;
     background: rgba(0, 0, 0, .2);
   }
 
@@ -183,7 +185,12 @@ main {
 
 /* Footer */
 footer {
-    background-color: #8802FE;
-    height: 100px;
     margin: 10px 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+ 
+#heart {
+    color: red;
+    font-size: 30px;
 }
