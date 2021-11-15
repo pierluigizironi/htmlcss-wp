@@ -91,13 +91,11 @@ ul li{
     font-size: 2.5em;
 }
 
-
 .sidebar {
     float: left;
     height: 700px;
     width: 25%;
     margin: 20px 0px;
-    background-color: #ABCFE7;
 }
 
 main {
@@ -105,8 +103,30 @@ main {
     height: 700px;
     width: calc(50% - 40px);
     margin: 20px 20px;
-    background-color: #ABCFE7;
 }
+
+.float-overlay .float-image {
+    display: block;
+    width: 90%;
+  }
+  
+
+.float-overlay {
+    position: relative;
+    width: 90%;
+  }
+  
+  .float-overlay::before {
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, .2);
+  }
 
 /* Footer */
 footer {
